@@ -1,0 +1,16 @@
+# Environnement virtuel
+.venv/
+.venv-happypet-data-quality/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# VSCode config
+.vscode/
+
+# fichiers système macOS
+.DS_Store
