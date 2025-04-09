@@ -14,3 +14,7 @@ __pycache__/
 
 # fichiers système macOS
 .DS_Store
+
+#toolbox perso
+notebooks/XX_toolbox.ipynb
+.venv-happypet-data-quality
