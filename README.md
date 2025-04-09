@@ -23,22 +23,20 @@ L’enjeu principal est de garantir la **qualité des données**, d’appliquer 
 
 ## 🧱 Pipeline de traitement
 
-1. **Chargement** des fichiers (CSV Excel)
+1. **Chargement** des fichiers (CSV)
 2. **Nettoyage** des données :
    - Dates, booléens, pourcentages
    - Formatage des ID
-   - Correction des anomalies connues
+   - Export en parquet
 3. **Contrôles de qualité** :
    - Complétude des quittances par rapport aux contrats
    - Concordance des montants annuels
    - Cohérence des IDs
 4. **Application des règles de gestion** :
-   - Réduction multi-contrats
    - Périodes de couverture
-   - Vérification de l’application tarifaire
+   - Vérification de l’application tarifaire globale
 5. **Restitution** :
    - Export des datasets nettoyés
-   - Préparation pour publication dans QuickSight
 
 ---
 
