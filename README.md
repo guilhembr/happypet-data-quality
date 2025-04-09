@@ -9,7 +9,7 @@
 Ce projet a pour objectif de traiter, contrôler et analyser les données d’assurance santé animale fournies mensuellement par un courtier.  
 Les données incluent : **contrats**, **quittances**, **sinistres** et **tarifs**.
 
-L’enjeu principal est de garantir la **qualité des données**, d’appliquer les **règles de gestion métier**, et de fournir des restitutions claires via **AWS QuickSight**.
+L’enjeu principal est de garantir la **qualité des données**, d’appliquer les **règles de gestion métier**.
 
 ---
 
