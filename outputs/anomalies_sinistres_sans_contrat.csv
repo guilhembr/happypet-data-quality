@@ -1,0 +1,7 @@
+actDescription,claimPaid,notificationDate,guarantee,claimOutstanding,actDate,actCategory,coverRef,coverId,actType,actId,incidentId,actValue,incidentDate,anomaly_type
+['vaccin'],21.0,2021-12-02 10:24:34.932370,0,0,2021-12-01,PREVENTION,sub_1JmRi6F5i98BakyStLdpTX23-250268780049861,Sub_1184092-0,VACC,C_21e9vr8h_1,C_21e9vr8h,65.0,2021-12-01,sinistre_without_contract
+[],65.0,2021-11-02 17:15:41.505407,0,0,2021-10-30,PREVENTION,sub_1JmRi6F5i98BakyStLdpTX23-250268780049861,Sub_1184092-0,VACC,C_kzhwlhrr_1,C_kzhwlhrr,65.0,2021-10-30,sinistre_without_contract
+['pour info n° de puce non à jour sur le contrat'],14.0,2021-11-02 17:15:41.505407,0,0,2021-10-30,PREVENTION,sub_1JmRi6F5i98BakyStLdpTX23-250268780049861,Sub_1184092-0,ANTP,C_kzhwlhrr_3,C_kzhwlhrr,14.0,2021-10-30,sinistre_without_contract
+['visite vaccinale'],78.0,2021-11-23 17:39:02.772801,0,0,2021-10-16,PREVENTION,sub_1JqEGyF5i98BakySKLOmxNe3-250269610101334,Sub_1397942-0,VACC,C_36xjuvpq_1,C_36xjuvpq,78.0,2021-10-16,sinistre_without_contract
+[],11.5,2021-11-23 17:39:02.772801,0,0,2021-10-16,PREVENTION,sub_1JqEGyF5i98BakySKLOmxNe3-250269610101334,Sub_1397942-0,ANTP,C_36xjuvpq_2,C_36xjuvpq,11.5,2021-10-16,sinistre_without_contract
+[],8.0,2021-11-23 17:39:02.772801,0,0,2021-10-16,PREVENTION,sub_1JqEGyF5i98BakySKLOmxNe3-250269610101334,Sub_1397942-0,VERM,C_36xjuvpq_3,C_36xjuvpq,8.0,2021-10-16,sinistre_without_contract

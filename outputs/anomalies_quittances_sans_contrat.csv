@@ -1,0 +1,11 @@
+healthPremiumInclTax,healthTax,preventionTax,liabilityPremiumInclTax,healthBrokerFee,preventionPremiumInclTax,coverRef,endCoverDate,coverId,issuanceDate,receiptId,startCoverDate,preventionBrokerFee,preventionHthc,healthHthc,anomaly_type
+24.99,2.219010989,0.0,0,5.426666667,0,sub_1JrMc4F5i98BakyS905SV9sR-250268732548727,2022-02-01,Sub_1287436-0,2021-02-12,no_discount-2CCBD08A-10367-0,2021-02-12,0.0,0.0,17.01,quittance_without_contract
+22.99,2.085824176,0.74,0,5.08,0,sub_1JnK6fF5i98BakySZFBryTyk-25026872004422,2022-01-22,Sub_1527581-0,2021-12-22,no_discount-2CCBD08A-13292-0,2021-12-22,-0.07,8.33,16.01,quittance_without_contract
+22.99,2.085824176,0.74,0,5.08,0,sub_1JnK6fF5i98BakySZFBryTyk-25026872004422,2021-11-22,Sub_1527581-0,2021-10-22,no_discount-in_1JnK6gF5i98BakySkyD43kva-25026872004422,2021-10-22,-0.07,8.33,16.01,quittance_without_contract
+22.99,2.085824176,0.74,0,5.08,0,sub_1JnK6fF5i98BakySZFBryTyk-25026872004422,2021-12-22,Sub_1527581-0,2021-11-22,no_discount-in_1JyYstF5i98BakySBf340iF1-25026872004422,2021-11-22,-0.07,8.33,16.01,quittance_without_contract
+19.99,1.813846154,0.74,0,2.85,9,sub_JzTgPvMcxdPfrx-00000,2021-06-09,Sub_1917020-0,2021-06-08,no_discount-in_1JLUjTF5i98BakySwosLc40l-00000,2021-06-08,-0.07,8.33,15.49,quittance_without_contract
+28.99,2.630769231,0.74,0,5.94,9,sub_1JmRi6F5i98BakyStLdpTX23-250268780049861,2022-01-19,Sub_1184092-0,2021-12-19,no_discount-2CCBD08A-12966-0,2021-12-19,-0.07,8.33,20.66,quittance_without_contract
+28.99,2.630769231,0.74,0,5.94,9,sub_1JmRi6F5i98BakyStLdpTX23-250268780049861,2021-12-19,Sub_1184092-0,2021-11-19,no_discount-in_1JxgVKF5i98BakySmUJpfFLv-250268780049861,2021-11-19,-0.07,8.33,20.66,quittance_without_contract
+11.99,1.073736264,0.0,0,1.576666667,0,sub_Jz05X3QFKfQW0o-0000,2021-05-09,Sub_1587187-0,2021-05-08,no_discount-in_1JL25GF5i98BakySITveEysz-0000,2021-05-08,0.0,0.0,9.28,quittance_without_contract
+21.99,1.958653846,0.74,0,4.024166667,9,sub_1JzfYMF5i98BakySxBI76VeI-250269590562700,2022-01-25,Sub_DLM_1500386-0,2021-12-25,no_discount-2CCBD08A-13667-0,2021-12-25,-0.07,8.33,15.78,quittance_without_contract
+29.99,2.656565934,0.0,0,7.140833333,0,sub_1JhZSGF5i98BakySeS46s3fD-250268501335624,2022-06-01,Sub_1998839-0,2021-06-12,no_discount-2CCBD08A-11016-0,2021-06-12,0.0,0.0,19.72,quittance_without_contract

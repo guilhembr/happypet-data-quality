@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
+import matplotlib.pyplot as plt
 import re
 
 
@@ -1068,7 +1069,75 @@ def export_all_anomalies_to_excel(output_dir: str, output_excel_path: str) -> pd
 
     return df_recap
 
+def plot_bubble_anomalies(
+    df,
+    montant_col="Montant total concerné (€)",
+    contrats_col="Nb de contrats uniques",
+    lignes_col="Nb de lignes",
+    type_col="Type d'anomalie",
+    agregat_col="Agrégat concerné",
+    anomalies_a_exclure=None,
+    title="Figure 2.1 - Gravité des anomalies"
+):
+    """
+    Crée un bubble plot des anomalies à partir d'un DataFrame.
+    
+    Parameters:
+    - df : DataFrame d'entrée avec les anomalies
+    - montant_col : nom de la colonne du montant
+    - contrats_col : nom de la colonne des contrats uniques
+    - lignes_col : nom de la colonne du nombre de lignes
+    - type_col : nom de la colonne du type d'anomalie
+    - agregat_col : nom de la colonne de l'agrégat
+    - anomalies_a_exclure : liste d'anomalies à exclure du graphe
+    - title : titre du graphique
+    """
+    
+    anomalies_a_exclure = anomalies_a_exclure or []
 
+    # Copie sans les lignes incomplètes
+    df_bubble = df.dropna(subset=[montant_col, contrats_col]).copy()
+
+    # Nettoyage des colonnes
+    df_bubble[montant_col] = (
+        df_bubble[montant_col].replace("-", np.nan).astype(float)
+    )
+
+    df_bubble[contrats_col] = pd.to_numeric(
+        df_bubble[contrats_col], errors="coerce"
+    ).fillna(0).astype(int)
+
+    # Filtrage des anomalies à exclure
+    df_bubble = df_bubble[~df_bubble[type_col].isin(anomalies_a_exclure)]
+
+    # Graphe
+    plt.figure(figsize=(12, 8))
+    scatter = plt.scatter(
+        df_bubble[contrats_col],
+        df_bubble[lignes_col],
+        s=df_bubble[montant_col].abs() / 10 + 50,
+        c=df_bubble[agregat_col].astype("category").cat.codes,
+        cmap="Set2",
+        alpha=0.7,
+        edgecolors="w",
+        linewidth=0.5
+    )
+
+    # Étiquettes
+    for i, row in df_bubble.iterrows():
+        plt.text(
+            row[contrats_col] + 2,
+            row[lignes_col],
+            row[type_col],
+            fontsize=8
+        )
+
+    plt.xlabel("Nombre de contrats uniques")
+    plt.ylabel("Nombre de lignes")
+    plt.title(title)
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
 #=============================== Next Steps ===============================================
 
 def check_quittances_contrats(df_contrats: pd.DataFrame, df_quittances: pd.DataFrame) -> pd.DataFrame:
